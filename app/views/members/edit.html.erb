@@ -1,0 +1,23 @@
+
+<h1>Edit Member</h1>
+<% if flash[:alert] %>
+    <div class="notice"><%= flash[:alert] %></div>
+<% end %>
+<%= form_for @member do |m| %>
+	<%= m.label :name, "Name" %>
+	<%= m.text_field :name %>
+	<br>
+	<%= m.label :email, "Email" %>
+	<%= m.text_field :email %>
+	<br>
+  <%= m.label :alias, "Alias" %>
+  <%= m.text_field :alias %>
+  <br>
+  <%= m.label :password, "Password" %>
+  <%= m.password_field :password %>
+  <br>
+  <%= m.label :password_confirmation, "Password" %>
+  <%= m.password_field :password_confirmation %>
+  <br>
+	<%= m.submit "Edit Member" %>
+<% end %>
