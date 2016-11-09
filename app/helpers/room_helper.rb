@@ -8,5 +8,4 @@ module RoomHelper
       redirect_to home_path(member)
     end
   end
-
 end
