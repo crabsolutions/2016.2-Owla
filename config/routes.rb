@@ -52,8 +52,9 @@ Rails.application.routes.draw do
 
   get 'sessions/new'
   get 'notifications' => 'notifications#index'
-  get    '/login',   to: 'sessions#new'
-  post   '/login',   to: 'sessions#create'
+  get  '/login',   to: 'sessions#new'
+  post  '/login',   to: 'sessions#create'
   get '/logout',  to: 'sessions#destroy'
+  get '/topic/:id/search_per_tag', to: 'topics#search_per_tag'
 
 end
