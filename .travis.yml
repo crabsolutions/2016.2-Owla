@@ -10,6 +10,7 @@ script:
   - bundle exec rake db:migrate
   - bundle exec rake db:seed
   - bundle exec rake
+  - CODECLIMATE_REPO_TOKEN=5891b1f77d783db65a29ab9ded1afd855b25cb15c9b4716f3b8f14757b7ed8a4 bundle exec codeclimate-test-reporter
 
 rvm:
   - 2.3.1
