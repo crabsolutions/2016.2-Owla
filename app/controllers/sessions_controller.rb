@@ -3,6 +3,7 @@ class SessionsController < ApplicationController
   before_action :not_allow_to_enter_login, only: [:new]
 
   def new
+    throw(:abort)
   end
 
   def create

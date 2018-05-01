@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 ruby '2.4.4'
 
 gem 'simple_form', '~> 4.0'
+gem 'bootsnap', '~> 1.3'
 gem 'jquery-minicolors-rails', '~> 2.2.6.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.0'
