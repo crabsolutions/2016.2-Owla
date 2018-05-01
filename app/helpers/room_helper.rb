@@ -9,6 +9,7 @@ module RoomHelper
       flash[:notice] = "You do not have permission to do this action"
       redirect_to topic_path(topic)
     end
+    throw(:abort)    
   end
 
 end

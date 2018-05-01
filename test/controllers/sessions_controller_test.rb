@@ -9,6 +9,7 @@ class SessionsControllerTest < ActionDispatch::IntegrationTest
                           password_confirmation: '123456',
                           alias: 'mateusin')
   end
+  
   test "should get new" do
     get sessions_new_url
     assert_response :success

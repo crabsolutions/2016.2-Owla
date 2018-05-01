@@ -24,12 +24,14 @@ module SessionsHelper
     else
       cookies[:member_id] = current_member.id
     end
+    throw(:abort)
   end
 
   def not_allow_to_enter_login
     if logged_in?
       redirect_to home_path(current_member)
     end
+    throw(:abort)    
   end
 
   def is_joined
@@ -47,5 +49,6 @@ module SessionsHelper
       flash[:notice] = "This topic does not exist"
       redirect_to home_path(member)
     end
+    throw(:abort)  
   end
 end
