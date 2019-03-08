@@ -6,7 +6,6 @@
 
 # Ignore bundler config.
 /.bundle
-Gemfile.lock
 # Ignore the default SQLite database.
 /db/*.sqlite3
 /db/*.sqlite3-journal
@@ -23,8 +22,6 @@ Gemfile.lock
 #Ignore coverage results
 coverage
 
-
-db/schema.rb
 assets/*
 public/assets/*
 public/system/*
@@ -39,4 +36,3 @@ public/system
 vendor/bundle
 public/slides
 
-config/environments/development.rb
